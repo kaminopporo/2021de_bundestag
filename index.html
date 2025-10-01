@@ -39,7 +39,7 @@
         /* サイドバーのスタイル */
         .sidebar {
             width: 300px;
-            background-color: #fff2cc;
+            background-color: #000000;
             padding: 30px;
             box-sizing: border-box;
             display: flex;
@@ -92,7 +92,7 @@
             margin-bottom: 5px;
             /* タイトルと詳細情報の間のマージンを詰める */
             text-align: left;
-            color: #990000;
+            color: #ffcc00;
             line-height: 1.3;
             display: block;
         }
@@ -109,7 +109,7 @@
             height: 30px;
             font-family: 'Material Icons';
             font-size: 20px;
-            color: #666;
+            color: #000000;
             cursor: pointer;
             display: flex;
             align-items: center;
@@ -138,7 +138,7 @@
             border-bottom: 1px solid #e0e0e0;
             padding-bottom: 5px;
             /* 詳細情報のタイトル下パディングを詰める */
-            color: #34495e;
+            color: #e0e0e0;
         }
 
         /* 凡例の項目スタイル */
@@ -202,7 +202,7 @@
             margin-bottom: 5px;
             border-bottom: 1px solid #e0e0e0;
             padding-bottom: 5px;
-            color: #2c3e50;
+            color: #000000;
         }
 
         /* 当選政党・最多得票政党の区切り線 */
@@ -220,7 +220,7 @@
             /* 各行間のマージンを詰める */
             line-height: 1.2;
             /* 行間を少し広げて読みやすくする */
-            color: #2c3e50;
+            color: #000000;
             /* テキストの色をより濃く */
         }
 
@@ -238,7 +238,7 @@
 
         /* 詳細情報パネルのスタイル */
         #info-panel {
-            background-color: #fdfdfd;
+            background-color: #ffffff;
             border-radius: 15px;
             padding: 10px 15px;
             /* パネル全体のパディングを詰める */
@@ -253,7 +253,7 @@
             font-size: 1.3em;
             margin-top: 0;
             margin-bottom: 0;
-            color: #2c3e50;
+            color: #000000;
             border-bottom: none;
             /* 区切り線を削除 */
         }
@@ -265,7 +265,7 @@
             /* 各行間のマージンを詰める */
             line-height: 1;
             /* 行間を詰める */
-            color: #2c3e50;
+            color: #000000;
             /* テキストの色をより濃く */
         }
 
@@ -316,7 +316,7 @@
 
         .explanation-panel h2 {
             font-size: 1.8em;
-            color: #990000;
+            color: #ffcc00;
             margin-top: 0;
             margin-bottom: 20px;
             border-bottom: 2px solid #e0e0e0;
@@ -650,7 +650,7 @@
                     <ul class="legend-list hidden" id="sm-legend-list">
                         <li class="legend-item" data-party-name="sm-winner">
                             <span class="legend-color"
-                                style="background: linear-gradient(to right, #000000, #ff0000, #a64d79);"></span>
+                                style="background: conic-gradient(#ff0000 0deg 120deg, #000000 120deg 240deg, #38761d 240deg 320deg, #46bdc6 320deg 360deg);"></span>
                             当選政党
                         </li>
                         <li class="legend-item" data-party-name="CDU">
@@ -705,7 +705,7 @@
                             <span class="legend-color" style="background-color: #e69138;"></span>
                             ÖDP: エコロジー民主党
                         </li>
-                        <li class="legend-item" data-party-name="V-Partei³">
+                        <li class="legend-item" data-party-name="VP">
                             <span class="legend-color" style="background-color: #00ff00;"></span>
                             V-Partei³: 改革・ベジタリアン・ビーガン党
                         </li>
@@ -821,7 +821,7 @@
                             <span class="legend-color" style="background-color: #f4cccc;"></span>
                             bergpartei: 山岳派・無党派
                         </li>
-                        <li class="legend-item" data-party-name="DIE SONSTIGEN - X">
+                        <li class="legend-item" data-party-name="X">
                             <span class="legend-color" style="background-color: #efefef;"></span>
                             DIE SONSTIGEN - X
                         </li>
@@ -849,8 +849,8 @@
                     </button>
                     <ul class="legend-list hidden" id="lg-legend-list">
                         <li class="legend-item" data-party-name="lg-winner">
-                            <span class="legend-color"
-                                style="background: linear-gradient(to right, #000000, #ff0000, #a64d79);"></span>
+                            <span class="legend-color" <span class="legend-color"
+                                style="background: conic-gradient(#ff0000 0deg 120deg, #000000 120deg 240deg, #38761d 240deg 320deg, #46bdc6 320deg 360deg);"></span>
                             最多得票政党
                         </li>
                         <li class="legend-item" data-party-name="CDU-LG">
@@ -905,7 +905,7 @@
                             <span class="legend-color" style="background-color: #e69138;"></span>
                             ÖDP: エコロジー民主党
                         </li>
-                        <li class="legend-item" data-party-name="V-Partei³-LG">
+                        <li class="legend-item" data-party-name="VP-LG">
                             <span class="legend-color" style="background-color: #00ff00;"></span>
                             V-Partei³: 改革・ベジタリアン・ビーガン党
                         </li>
@@ -1021,7 +1021,7 @@
                             <span class="legend-color" style="background-color: #f4cccc;"></span>
                             bergpartei: 山岳派・無党派
                         </li>
-                        <li class="legend-item" data-party-name="DIE SONSTIGEN - X-LG">
+                        <li class="legend-item" data-party-name="X-LG">
                             <span class="legend-color" style="background-color: #efefef;"></span>
                             DIE SONSTIGEN - X
                         </li>
@@ -1045,8 +1045,8 @@
                 </div>
             </div>
             <div class="section-divider"></div>
-            <p><strong>クリックで詳細</strong>: 地図上の選挙区をクリックすると、サイドバー（PC）またはポップアップ（スマートフォン）にその選挙区の各政党の得票率詳細が表示されます。</p>
             <p><strong>データソース</strong>: ドイツ政府が公表するデータに基づいています。</p>
+            <p><strong>クリックで詳細</strong>: 地図上の選挙区をクリックすると、サイドバー（PC）またはポップアップ（スマートフォン）にその選挙区の各政党の得票率詳細が表示されます。</p>
         </div>
     </div>
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
@@ -1079,7 +1079,7 @@
             'Die Heimat': '#f1c232',
             'Piratenpartei': '#f6b26b',
             'ÖDP': '#e69138',
-            'V-Partei³': '#00ff00',
+            'VP': '#00ff00',
             'DiB': '#d5a6bd',
             'BP': '#00ffff',
             'Tierschutzallianz': '#0b5394',
@@ -1108,7 +1108,7 @@
             'Volt': '#674ea7',
             'Volksabstimmung': '#efefef',
             'bergpartei': '#f4cccc',
-            'DIE SONSTIGEN - X': '#efefef',
+            'X': '#efefef',
             'Familie': '#f9cb9c',
             'Graue Panther': '#efefef',
             'KlimalisteBW': '#93c47d',
@@ -1171,7 +1171,7 @@
                 "sm": "GIS2021独_field_55",
                 "lg": "GIS2021独_field_57"
             },
-            "V-Partei³": {
+            "VP": {
                 "sm": "GIS2021独_field_59",
                 "lg": "GIS2021独_field_61"
             },
@@ -1287,7 +1287,7 @@
                 "sm": "GIS2021独_field_171",
                 "lg": "GIS2021独_field_173"
             },
-            "DIE SONSTIGEN - X": {
+            "X": {
                 "sm": "GIS2021独_field_175",
                 "lg": "GIS2021独_field_177"
             },
@@ -1329,7 +1329,7 @@
             'Die Heimat': { 'sm': 'GIS2021独_Die Heimat小', 'lg': 'GIS2021独_Die Heimat比' },
             'Piratenpartei': { 'sm': 'GIS2021独_Piratenpartei小', 'lg': 'GIS2021独_Piratenpartei比' },
             'ÖDP': { 'sm': 'GIS2021独_ÖDP小', 'lg': 'GIS2021独_ÖDP比' },
-            'V-Partei³': { 'sm': 'GIS2021独_V-Partei³小', 'lg': 'GIS2021独_V-Partei³比' },
+            'VP': { 'sm': 'GIS2021独_V-Partei³小', 'lg': 'GIS2021独_V-Partei³比' },
             'DiB': { 'sm': 'GIS2021独_DiB小', 'lg': 'GIS2021独_DiB比' },
             'BP': { 'sm': 'GIS2021独_BP小', 'lg': 'GIS2021独_BP比' },
             'Tierschutzallianz': { 'sm': 'GIS2021独_Tierschutzallianz小', 'lg': 'GIS2021独_Tierschutzallianz比' },
@@ -1358,7 +1358,7 @@
             'Volt': { 'sm': 'GIS2021独_Volt小', 'lg': 'GIS2021独_Volt比' },
             'Volksabstimmung': { 'sm': 'GIS2021独_Volksabstimmung小', 'lg': 'GIS2021独_Volksabstimmung比' },
             'bergpartei': { 'sm': 'GIS2021独_bergpartei小', 'lg': 'GIS2021独_bergpartei比' },
-            'DIE SONSTIGEN - X': { 'sm': 'GIS2021独_DIE SONSTIGEN - X小', 'lg': 'GIS2021独_DIE SONSTIGEN - X比' },
+            'X': { 'sm': 'GIS2021独_DIE SONSTIGEN - X小', 'lg': 'GIS2021独_DIE SONSTIGEN - X比' },
             'Familie': { 'sm': 'GIS2021独_Familie小', 'lg': 'GIS2021独_Familie比' },
             'Graue Panther': { 'sm': 'GIS2021独_Graue Panther小', 'lg': 'GIS2021独_Graue Panther比' },
             'KlimalisteBW': { 'sm': 'GIS2021独_KlimalisteBW小', 'lg': 'GIS2021独_KlimalisteBW比' },
