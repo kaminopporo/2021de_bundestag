@@ -147,7 +147,7 @@
             align-items: center;
             margin-bottom: 10px;
             font-size: 1.1em;
-            color: #4a4a4a;
+            color: #000000;
             padding: 5px 0;
             transition: background-color 0.2s ease;
             border-radius: 15px;
@@ -180,7 +180,7 @@
             /* ホバーアクションをなくす */
             font-weight: normal;
             /* 太字をなくす */
-            color: #4a4a4a;
+            color: #000000;
             /* 文字色を元に戻す */
         }
 
@@ -218,7 +218,7 @@
             font-size: 1.05em;
             margin-bottom: 0;
             /* 各行間のマージンを詰める */
-            line-height: 1.2;
+            line-height: 1;
             /* 行間を少し広げて読みやすくする */
             color: #000000;
             /* テキストの色をより濃く */
@@ -252,21 +252,21 @@
         #info-panel h2 {
             font-size: 1.3em;
             margin-top: 0;
-            margin-bottom: 0;
+            margin-bottom: 10px;
             color: #000000;
             border-bottom: none;
             /* 区切り線を削除 */
         }
 
         #info-panel p {
-            font-size: 0.9em;
+            font-size: 1.0em;
             /* フォントサイズも少し小さくして行数を稼ぐ */
-            margin-bottom: 0;
-            /* 各行間のマージンを詰める */
+            margin-top: 0;
+            margin-bottom: 10px;
+            /* 各行間のマージンをさらに詰める */
             line-height: 1;
-            /* 行間を詰める */
+            /* 行間をさらに詰める */
             color: #000000;
-            /* テキストの色をより濃く */
         }
 
         /* ハイライト用スタイル */
@@ -326,7 +326,7 @@
         .explanation-panel p {
             font-size: 1.1em;
             line-height: 1.7;
-            color: #333;
+            color: #000000;
             margin-bottom: 15px;
         }
 
@@ -344,7 +344,7 @@
             font-size: 1.05em;
             line-height: 1.6;
             margin-bottom: 8px;
-            color: #444;
+            color: #000000;
         }
 
         /* 新しい凡例コンテナのスタイル */
@@ -443,7 +443,7 @@
             border: none;
             font-size: 1.2em;
             font-weight: bold;
-            color: #333;
+            color: #000000;
             cursor: pointer;
             padding: 10px 0;
             margin-top: 10px;
@@ -535,7 +535,7 @@
                 /* マージンをさらに減らす */
                 line-height: 1.1;
                 /* 行間をさらに詰める */
-                color: #2c3e50;
+                color: #000000;
             }
 
             .leaflet-popup-content h3 {
@@ -757,10 +757,6 @@
                             <span class="legend-color" style="background-color: #783f04;"></span>
                             Die Urbane: 都会的なヒップホップ党
                         </li>
-                        <li class="legend-item" data-party-name="SGP">
-                            <span class="legend-color" style="background-color: #980000;"></span>
-                            SGP: 社会主義平等党
-                        </li>
                         <li class="legend-item" data-party-name="die BASIS">
                             <span class="legend-color" style="background-color: #134f5c;"></span>
                             die BASIS: ドイツ基盤民主主義党
@@ -788,14 +784,6 @@
                         <li class="legend-item" data-party-name="LKR">
                             <span class="legend-color" style="background-color: #f9cb9c;"></span>
                             LKR: 自由保守改革者
-                        </li>
-                        <li class="legend-item" data-party-name="PdF">
-                            <span class="legend-color" style="background-color: #ffe599;"></span>
-                            PdF: 進歩党
-                        </li>
-                        <li class="legend-item" data-party-name="LfK">
-                            <span class="legend-color" style="background-color: #c27ba0;"></span>
-                            LfK: 子どものためのロビイスト
                         </li>
                         <li class="legend-item" data-party-name="SSW">
                             <span class="legend-color" style="background-color: #1c4587;"></span>
@@ -849,7 +837,7 @@
                     </button>
                     <ul class="legend-list hidden" id="lg-legend-list">
                         <li class="legend-item" data-party-name="lg-winner">
-                            <span class="legend-color" <span class="legend-color"
+                            <span class="legend-color"
                                 style="background: conic-gradient(#ff0000 0deg 120deg, #000000 120deg 240deg, #38761d 240deg 320deg, #46bdc6 320deg 360deg);"></span>
                             最多得票政党
                         </li>
@@ -1013,40 +1001,11 @@
                             <span class="legend-color" style="background-color: #674ea7;"></span>
                             Volt: Volt Deutschland
                         </li>
-                        <li class="legend-item" data-party-name="Volksabstimmung-LG">
-                            <span class="legend-color" style="background-color: #efefef;"></span>
-                            Volksabstimmung: 国民投票による民主主義
-                        </li>
-                        <li class="legend-item" data-party-name="bergpartei-LG">
-                            <span class="legend-color" style="background-color: #f4cccc;"></span>
-                            bergpartei: 山岳派・無党派
-                        </li>
-                        <li class="legend-item" data-party-name="X-LG">
-                            <span class="legend-color" style="background-color: #efefef;"></span>
-                            DIE SONSTIGEN - X
-                        </li>
-                        <li class="legend-item" data-party-name="Familie-LG">
-                            <span class="legend-color" style="background-color: #f9cb9c;"></span>
-                            Familie: ドイツ家族の党
-                        </li>
-                        <li class="legend-item" data-party-name="Graue Panther-LG">
-                            <span class="legend-color" style="background-color: #efefef;"></span>
-                            Graue Panther: 灰色の豹
-                        </li>
-                        <li class="legend-item" data-party-name="KlimalisteBW-LG">
-                            <span class="legend-color" style="background-color: #93c47d;"></span>
-                            KlimalisteBW: バーデン＝ヴュルテンベルク気候党
-                        </li>
-                        <li class="legend-item" data-party-name="Thüringer Heimatpartei-LG">
-                            <span class="legend-color" style="background-color: #efefef;"></span>
-                            Thüringer Heimatpartei: テューリンゲン祖国党
-                        </li>
                     </ul>
                 </div>
             </div>
             <div class="section-divider"></div>
             <p><strong>データソース</strong>: ドイツ政府が公表するデータに基づいています。</p>
-            <p><strong>クリックで詳細</strong>: 地図上の選挙区をクリックすると、サイドバー（PC）またはポップアップ（スマートフォン）にその選挙区の各政党の得票率詳細が表示されます。</p>
         </div>
     </div>
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
